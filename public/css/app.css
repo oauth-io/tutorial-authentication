@@ -1,0 +1,89 @@
+/* app css stylesheet */
+
+body {
+  padding-top:70px;
+}
+
+.connect {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	color: #fff;
+	padding: 20px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.connect.google, .connected.google, .sync.google {
+	background-color: #d94a24;
+	border-color: #d0370a;
+}
+
+.connect.facebook, .connected.facebook, .sync.facebook {
+	background-color: #3b5ba0;
+	border-color: #2f4f95;
+}
+
+.connect.twitter, .connected.twitter, .sync.twitter {
+	background-color: #00b5f6;
+	border-color: #00a8ea;
+}
+
+.connect.github, .connected.github, .sync.github {
+	background-color: #393939;
+	border-color: #1e1e1e;
+}
+
+.sync {
+	background-color: #393939;
+	border-color: #1e1e1e;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	color: #fff;
+	padding: 10px 20px;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.sync.synced {
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	cursor: default;
+}
+
+.connected {
+	padding: 2px 5px;
+	margin-right: 5px;
+	border-radius: 4px;
+	color: white;
+	position: relative; top: -5px;
+}

@@ -1,0 +1,22 @@
+.row
+	.col-lg-3
+		div(style="text-align: center")
+			img.img-rounded(ng-src="{{user.picture}}")
+			h3 {{user.name}}
+		hr
+		a(ng-hide="editSync",style="float: right; position: relative; top: -3px", ng-click="editSync = true") edit
+		h5 Connected via
+		span(ng-show="isSync", class="connected {{provider}}", ng-repeat="(provider, isSync) in sync") {{provider|capitalize}}
+
+		div(ng-show="editSync", ng-click="synchronize(provider)", ng-repeat="(provider, isSync) in sync",ng-class="{sync: true}",class="{{provider}}")
+			span.pull-right {{isSync|onoff}}
+			span {{provider|capitalize}}
+
+		div(style="margin-top: 10px", ng-show="editSync")
+			a(ng-click="editSync = false") Cancel
+	.col-lg-9
+		h5 User info
+		pre {{user|json}}
+		br
+		h5 Synchronized with
+		pre {{sync|json}}

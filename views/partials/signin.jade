@@ -1,0 +1,15 @@
+div
+	div.row
+		div.col-md-8.col-xs-12.col-md-offset-2
+			h2(style="text-align: center; margin-bottom: 50px") Sign in with your favorite service
+	div.row
+		div.col-md-4.col-xs-6.col-md-offset-2
+			button.connect.google(ng-click="signin('google')") Google
+		div.col-md-4.col-xs-6
+			button.connect.facebook(ng-click="signin('facebook')") Facebook
+	br
+	div.row
+		div.col-md-4.col-xs-6.col-md-offset-2
+			button.connect.twitter(ng-click="signin('twitter')") Twitter
+		div.col-md-4.col-xs-6
+			button.connect.github(ng-click="signin('github')") Github
