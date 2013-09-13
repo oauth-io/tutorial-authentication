@@ -4,6 +4,9 @@
 	"private": true,
 	"dependencies": {
 		"express": "~3.2.6",
-		"jade": "~0.31.2"
+		"jade": "~0.31.2",
+		"crypto": "~0.0.3",
+		"mongoose": "~3.6.19",
+		"request": "~2.27.0"
 	}
 }
